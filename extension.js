@@ -71,7 +71,7 @@ function activate(ctx) {
 		}),
 		vscode.commands.registerCommand('feinterview.openSite', openInWebview),
 		vscode.commands.registerCommand('feinterview.deleteCollect', ({id})=> {
-			BaseConfig.removeConfig('frontend-box.markbook', id).then(() => {
+			BaseConfig.removeConfig('frontend-box.markbookhenry', id).then(() => {
         globalState.events.emit('refresh-view', 'collect');
       });
 		}),
@@ -101,7 +101,7 @@ function activate(ctx) {
                 );
                 return;
               }
-              BaseConfig.updateConfig('frontend-box.markbook', [
+              BaseConfig.updateConfig('frontend-box.markbookhenry', [
                 { title, url },
               ]).then(() => {
                 globalState.events.emit('refresh-view', 'collect');

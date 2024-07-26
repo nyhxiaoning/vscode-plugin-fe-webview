@@ -1,211 +1,211 @@
 {
-    "name": "fe-tools",
-    "displayName": "前端工具箱",
-    "description": "把面试题、常用工具装进vscode里",
-    "version": "1.0.0",
-    "icon": "resources/icon.png",
-    "license": "GPL",
-    "publisher": "poetries",
-    "repository": {
-        "url": "https://github.com/poetries/vscode-plugin-fe.git"
-    },
-    "keywords": [
-        "interview",
-        "面试",
-        "前端面试",
-        "前端",
-        "前端开发",
-        "fe",
-        "front end",
-        "面试题",
-        "前端学习",
-        "工具",
-        "工具箱",
-        "博客",
-        "公众号",
-        "职场",
-        "求职",
-        "boss",
-        "node",
-        "taro",
-        "webpack",
-        "nginx",
-        "RSS"
-    ],
-    "engines": {
-        "vscode": "^1.35.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onView:feinterview_site",
-        "onView:feinterview_blog",
-        "onView:feinterview_tools",
-        "onView:feinterview_docs",
-        "onView:feinterview_boss",
-        "onView:feinterview_topic",
-        "onView:feinterview_question",
-        "onView:feinterview_collect",
-        "onView:feinterview_setting"
-    ],
-    "main": "./extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "feinterview.addTools",
-                "title": "更多工具",
-                "icon": "resources/icon_appadd.svg"
-            },
-            {
-                "command": "feinterview.refreshTopic",
-                "title": "换一批",
-                "icon": "resources/icon_refresh.svg"
-            },
-            {
-                "command": "feinterview.refreshQuestion",
-                "title": "换一批",
-                "icon": "resources/icon_refresh.svg"
-            },
-            {
-                "command": "feinterview.addCollect",
-                "title": "添加网址",
-                "icon": {
-                    "light": "resources/light/add.svg",
-                    "dark": "resources/dark/add.svg"
-                }
-            },
-            {
-                "command": "feinterview.deleteCollect",
-                "title": "删除网址",
-                "icon": {
-                    "light": "resources/light/del.svg",
-                    "dark": "resources/dark/del.svg"
-                }
-            }
-        ],
-        "viewsContainers": {
-            "activitybar": [
-                {
-                    "id": "feinterview",
-                    "title": "前端工具箱",
-                    "icon": "resources/icon_fe.svg"
-                }
-            ]
-        },
-        "views": {
-            "feinterview": [
-                {
-                    "id": "feinterview_site",
-                    "name": "快捷导航"
-                },
-                {
-                    "id": "feinterview_docs",
-                    "name": "文档查询"
-                },
-                {
-                    "id": "feinterview_boss",
-                    "name": "前端面试"
-                },
-                {
-                    "id": "feinterview_topic",
-                    "name": "热门话题"
-                },
-                {
-                    "id": "feinterview_question",
-                    "name": "职场问题"
-                },
-                {
-                    "id": "feinterview_tools",
-                    "name": "常用工具"
-                },
-                {
-                    "id": "feinterview_collect",
-                    "name": "收藏夹"
-                },
-                {
-                    "id": "feinterview_setting",
-                    "name": "关于我们"
-                }
-            ]
-        },
-        "menus": {
-            "view/title": [
-                {
-                    "command": "feinterview.addTools",
-                    "when": "view == feinterview_tools",
-                    "group": "navigation@1"
-                },
-                {
-                    "command": "feinterview.refreshTopic",
-                    "when": "view == feinterview_topic",
-                    "group": "navigation@1"
-                },
-                {
-                    "command": "feinterview.refreshQuestion",
-                    "when": "view == feinterview_question",
-                    "group": "navigation@1"
-                },
-                {
-                    "command": "feinterview.addCollect",
-                    "when": "view == feinterview_collect",
-                    "group": "navigation"
-                }
-            ],
-            "view/item/context": [
-                {
-                    "command": "feinterview.deleteCollect",
-                    "when": "view == feinterview_collect",
-                    "group": "group1"
-                },
-                {
-                    "command": "feinterview.deleteCollect",
-                    "when": "view == feinterview_collect",
-                    "group": "inline"
-                }
-            ]
-        },
-        "configuration": {
-            "properties": {
-                "frontend-box.markbook": {
-                    "type": "array",
-                    "default": [
-                        {
-                            "title": "Web 技术周刊",
-                            "url": "https://www.yuque.com/awesome/fe_weekly"
-                        },
-                        {
-                            "title": "科技爱好者周刊",
-                            "url": "https://www.yuque.com/ruanyf/weekly"
-                        },
-                        {
-                            "title": "产品经理知识整理",
-                            "url": "https://www.yuque.com/weis/pm"
-                        }
-                    ],
-                    "description": "收藏网址"
-                }
-            }
+  "name": "fe-tools-henry",
+  "displayName": "前端工具箱-henrytest",
+  "description": "把面试题、常用工具装进vscode里",
+  "version": "1.3.5",
+  "icon": "resources/icon.png",
+  "license": "GPL",
+  "publisher": "henry",
+  "repository": {
+    "url": "https://github.com/poetries/vscode-plugin-fe.git"
+  },
+  "keywords": [
+    "interview",
+    "面试",
+    "前端面试",
+    "前端",
+    "前端开发",
+    "fe",
+    "front end",
+    "面试题",
+    "前端学习",
+    "工具",
+    "工具箱",
+    "博客",
+    "公众号",
+    "职场",
+    "求职",
+    "boss",
+    "node",
+    "taro",
+    "webpack",
+    "nginx",
+    "RSS"
+  ],
+  "engines": {
+    "vscode": "^1.35.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:feinterview_site",
+    "onView:feinterview_blog",
+    "onView:feinterview_tools",
+    "onView:feinterview_docs",
+    "onView:feinterview_boss",
+    "onView:feinterview_topic",
+    "onView:feinterview_question",
+    "onView:feinterview_collect",
+    "onView:feinterview_setting"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "feinterview.addTools",
+        "title": "更多工具",
+        "icon": "resources/icon_appadd.svg"
+      },
+      {
+        "command": "feinterview.refreshTopic",
+        "title": "换一批",
+        "icon": "resources/icon_refresh.svg"
+      },
+      {
+        "command": "feinterview.refreshQuestion",
+        "title": "换一批",
+        "icon": "resources/icon_refresh.svg"
+      },
+      {
+        "command": "feinterview.addCollect",
+        "title": "添加网址",
+        "icon": {
+          "light": "resources/light/add.svg",
+          "dark": "resources/dark/add.svg"
         }
+      },
+      {
+        "command": "feinterview.deleteCollect",
+        "title": "删除网址",
+        "icon": {
+          "light": "resources/light/del.svg",
+          "dark": "resources/dark/del.svg"
+        }
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "feinterviewhenry",
+          "title": "前端工具箱",
+          "icon": "resources/icon_fe.svg"
+        }
+      ]
     },
-    "scripts": {
-        "lint": "eslint .",
-        "pretest": "yarn run lint",
-        "test": "node ./test/runTest.js"
+    "views": {
+      "feinterviewhenry": [
+        {
+          "id": "feinterview_site",
+          "name": "快捷导航"
+        },
+        {
+          "id": "feinterview_docs",
+          "name": "文档查询"
+        },
+        {
+          "id": "feinterview_boss",
+          "name": "前端面试"
+        },
+        {
+          "id": "feinterview_topic",
+          "name": "热门话题"
+        },
+        {
+          "id": "feinterview_question",
+          "name": "职场问题"
+        },
+        {
+          "id": "feinterview_tools",
+          "name": "常用工具"
+        },
+        {
+          "id": "feinterview_collect",
+          "name": "收藏夹"
+        },
+        {
+          "id": "feinterview_setting",
+          "name": "关于我们"
+        }
+      ]
     },
-    "devDependencies": {
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.0.0",
-        "@types/node": "^14.0.27",
-        "@types/vscode": "^1.35.0",
-        "eslint": "^7.6.0",
-        "glob": "^7.1.6",
-        "mocha": "^8.0.1",
-        "typescript": "^3.8.3",
-        "vscode-test": "^1.4.0"
+    "menus": {
+      "view/title": [
+        {
+          "command": "feinterview.addTools",
+          "when": "view == feinterview_tools",
+          "group": "navigation@1"
+        },
+        {
+          "command": "feinterview.refreshTopic",
+          "when": "view == feinterview_topic",
+          "group": "navigation@1"
+        },
+        {
+          "command": "feinterview.refreshQuestion",
+          "when": "view == feinterview_question",
+          "group": "navigation@1"
+        },
+        {
+          "command": "feinterview.addCollect",
+          "when": "view == feinterview_collect",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "feinterview.deleteCollect",
+          "when": "view == feinterview_collect",
+          "group": "group1"
+        },
+        {
+          "command": "feinterview.deleteCollect",
+          "when": "view == feinterview_collect",
+          "group": "inline"
+        }
+      ]
     },
-    "dependencies": {
-        "axios": "^0.21.1",
-        "events": "^3.2.0"
+    "configuration": {
+      "properties": {
+        "frontend-box.markbookhenry": {
+          "type": "array",
+          "default": [
+            {
+              "title": "Web 技术周刊",
+              "url": "https://www.yuque.com/awesome/fe_weekly"
+            },
+            {
+              "title": "科技爱好者周刊",
+              "url": "https://www.yuque.com/ruanyf/weekly"
+            },
+            {
+              "title": "产品经理知识整理",
+              "url": "https://www.yuque.com/weis/pm"
+            }
+          ],
+          "description": "收藏网址"
+        }
+      }
     }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.27",
+    "@types/vscode": "^1.35.0",
+    "eslint": "^7.6.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.0.1",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "events": "^3.2.0"
+  }
 }

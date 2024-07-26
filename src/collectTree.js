@@ -17,7 +17,7 @@ class ToolsTree {
         return element;
     }
     getChildren() {
-        const sites = BaseConfig.getConfig('frontend-box.markbook');
+        const sites = BaseConfig.getConfig('frontend-box.markbookhenry');
         return sites.map(item => {
           item.icon = 'sitepage.svg'
           const tree = new DataItem(
